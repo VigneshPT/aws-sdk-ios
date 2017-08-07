@@ -226,7 +226,7 @@ static AWSS3TransferUtility *_defaultS3TransferUtility = nil;
         if(serviceConfiguration.timeoutIntervalForRequest > 0){
             configuration.timeoutIntervalForRequest = serviceConfiguration.timeoutIntervalForRequest;
         }
-        configuration.sharedContainerIdentifier = serviceConfiguration.sharedContainerIdentifier;
+        configuration.sharedContainerIdentifier = @"group.com.joyn.soyou";
         
         _session = [NSURLSession sessionWithConfiguration:configuration
                                                  delegate:self
